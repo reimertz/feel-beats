@@ -1,0 +1,63 @@
+{% extends '/base.html' %}
+
+{% block css_head_theme %}
+<link rel="stylesheet" href="/css/desktop/home.css">
+{% endblock %}
+
+{% block js_head_theme %}
+<script src="/js/desktop/feelbeats.js"></script>
+{% endblock %}
+
+{% block body %}
+<div class="bg"></div>
+
+<div class="row">
+  <div class="col-md-12">
+    <h1 class="title">Feel Beats</h1>
+  </div>
+</div>
+
+<div class="row add-margin">
+  <div class="col-md-12">
+    <h2 class="title">Listen to a song and feel what the artist is actually playing, like, for real!</h2>
+  </div>
+</div>
+
+<div class="row add-margin">
+  <div data-play-song="spotify:track:1hKdDCpiI9mqz1jVHRKG0E" class="col-xs-8 col-xs-offset-2 col-md-2 col-md-offset-1 custom-btn">
+    <img class="img-responsive" src="https://d3rt1990lpmkn.cloudfront.net/original/bbd1f19477ee2cb30c1ae9cece461b156d2bb48d">
+    <h4>Metallica - Enter Sandman</h4>
+    <p>Be Lars Ulrich and feel the drums</p>
+  </div>
+  <div data-play-song="spotify:track:2Foc5Q5nqNiosCNqttzHof" class="col-xs-8 col-xs-offset-2 col-md-2 col-md-offset-2 custom-btn">
+    <img class="img-responsive" src="https://d3rt1990lpmkn.cloudfront.net/original/6c4186ebbb0b86f098954e6518123fc05a8eeddf">
+    <h4>Daft Punk - Get Lucky</h4>
+    <p>Feel the beat like a pro!</p>
+  </div>
+  <div data-play-song="spotify:track:0h04W0JA6Nh26XAhgMt5S8" class="col-xs-8 col-xs-offset-2 col-md-2 col-md-offset-2 custom-btn">
+    <img class="img-responsive" src="https://d3rt1990lpmkn.cloudfront.net/original/2d39f21601dc99d8472bf96e1ffe68c805cbd991">
+    <h4>Queens of the Stone Age - Everybody Knows That You're Insane</h4>
+    <p>Dave Grohl &lt;3</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <div class="form-group">
+      <input class="form-control" id="query" placeholder="Or do a search instead.. ;D">
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <ul id="results"></ul>
+  </div>  
+</div>
+
+
+{% endblock %}
+
+{% block js_body_page %}
+
+{% endblock %}

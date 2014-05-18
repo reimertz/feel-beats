@@ -1,0 +1,43 @@
+{
+  "name": "feelbeats",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "debug": "node --debug server.js",
+    "postinstall": "grunt -env heroku"
+  },
+  "author": "Pierre Reimertz",
+  "license": "ISC",
+  "devDependencies": {
+    "johnny-five": "~0.7.34",
+    "midifile": "~0.2.0",
+    "libspotify": "~0.2.2",
+    "midi": "~0.9.0",
+    "consolidate": "~0.10.0",
+    "express": "~4.2.0",
+    "swig": "~1.3.2",
+    "underscore": "~1.6.0",
+    "deferred": "~0.7.1",
+    "request": "~2.35.0",
+    "grunt-cli": "*",
+    "grunt": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-concat-in-order": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-replace": "*",
+    "grunt-contrib-copy": "*",
+    "body-parser": "~1.2.0",
+    "spotify-web": "~1.2.0",
+    "speaker": "~0.1.0",
+    "lame": "~1.1.0",
+    "random-ua": "0.0.4",
+    "cheerio": "~0.16.0",
+    "FileReader": "~0.10.2",
+    "xmlhttprequest": "~1.6.0",
+    "performance-now": "~0.1.3"
+  }
+}
