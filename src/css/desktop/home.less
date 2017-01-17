@@ -1,0 +1,96 @@
+@import '/third-party/bootstrap/variables';
+@import '/third-party/bootstrap/mixins';
+@import '/third-party/bootstrap/utilities';
+@import '/third-party/bootstrap/forms';
+@import '/third-party/bootstrap/navs';
+@import '/third-party/bootstrap/navbar';
+@import '/third-party/bootstrap/buttons';
+@import '/third-party/bootstrap/responsive-utilities';
+
+@import '/third-party/font-awesome/font-awesome';
+@import '/lib/variables';
+
+body {
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+
+.bg {
+  background-image: url(/img/bg.gif);
+  background-size: cover;
+  opacity: 0.5;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+h1,h2,h3,h4,span {
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+.row.add-margin {
+  margin-top: 50px;
+}
+
+.form-control {
+  padding: 25px;
+  font-size: 21px;
+  background-color: rgba(255,255,255,0.2);
+  color:white;
+}
+
+h1.title {
+  background-color: white;
+  color: black;
+  font-size: 90px;
+  font-family: 700;
+  letter-spacing: 2px;
+}
+.custom-btn  {
+  position: relative;  
+  transition: 0.5s;
+  opacity: 1;
+  cursor: pointer;
+  text-shadow: 1px 1px 20px black;
+}
+
+.custom-btn.is-playing.disabled {
+  opacity: 01;
+}
+
+.custom-btn.disabled {
+  opacity: 0.4;
+}
+
+.custom-btn:after {
+  font-size: 40px;
+  padding: 40%;
+  content:"\f04b";
+  font-family: FontAwesome;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.custom-btn:hover:after,
+.custom-btn.is-playing:after {
+  opacity: 1;
+}
+
+ul {
+  padding: 20px;
+}
+
+li  {
+  margin-top: 20px;
+  font-size: 20px;
+
+}
+
